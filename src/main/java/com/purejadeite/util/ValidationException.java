@@ -7,6 +7,11 @@ package com.purejadeite.util;
 public class ValidationException extends RuntimeException {
 
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6242735083599671073L;
+
+	/**
 	 * コンストラクタ
 	 */
 	public ValidationException() {

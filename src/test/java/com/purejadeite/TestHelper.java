@@ -2,6 +2,7 @@ package com.purejadeite;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.List;
 import java.util.Map;
 
@@ -31,7 +32,7 @@ public class TestHelper {
 	}
 
 	public static String toJsonString(File jsonFile) throws IOException {
-		return FileUtils.readFileToString(jsonFile);
+		return FileUtils.readFileToString(jsonFile, Charset.defaultCharset());
 	}
 
 	public static Object toJsonObject(String jsonFilePath) throws IOException {
